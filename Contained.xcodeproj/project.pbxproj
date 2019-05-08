@@ -31,7 +31,7 @@
 		0B337C0E2282647500FD9E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B337C112282647500FD9E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B337C132282647500FD9E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Utility.swift"; sourceTree = SOURCE_ROOT; };
+		0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "SKSpriteNode+Utility.swift"; path = "Contained/SKSpriteNode+Utility.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,16 +83,32 @@
 		0B337C062282647400FD9E17 /* Contained */ = {
 			isa = PBXGroup;
 			children = (
-				0B337C0B2282647400FD9E17 /* Main.storyboard */,
-				0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */,
 				0B06A56B2282BE6800AB078B /* Model */,
+				0B72ED402282C47400E480CB /* Views */,
+				0B72ED3F2282C45C00E480CB /* Controllers */,
+				0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */,
+				0B06A56C2282BE9A00AB078B /* Resources */,
+			);
+			path = Contained;
+			sourceTree = "<group>";
+		};
+		0B72ED3F2282C45C00E480CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				0B06A56322829E2000AB078B /* InfoViewController.swift */,
 				0B06A56522829E2F00AB078B /* GameViewController.swift */,
 				0B06A5692282BAF700AB078B /* CustomScene.swift */,
 				0B06A56722829E3800AB078B /* SettingsViewController.swift */,
-				0B06A56C2282BE9A00AB078B /* Resources */,
 			);
-			path = Contained;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B72ED402282C47400E480CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B337C0B2282647400FD9E17 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = Contained/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contained/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = Contained/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Contained/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
