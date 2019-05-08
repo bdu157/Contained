@@ -16,7 +16,6 @@
 		0B337C0D2282647400FD9E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B337C0B2282647400FD9E17 /* Main.storyboard */; };
 		0B337C0F2282647500FD9E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B337C0E2282647500FD9E17 /* Assets.xcassets */; };
 		0B337C122282647500FD9E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B337C102282647500FD9E17 /* LaunchScreen.storyboard */; };
-		0B9F4E772282667E0049C323 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 0B9F4E762282667E0049C323 /* Images */; };
 		0B9F4E7A228266F50049C323 /* SKSpriteNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +31,6 @@
 		0B337C0E2282647500FD9E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B337C112282647500FD9E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B337C132282647500FD9E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B9F4E762282667E0049C323 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = SOURCE_ROOT; };
 		0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Utility.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -47,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06A56B2282BE6800AB078B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B06A56122829D4C00AB078B /* Settings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B06A56C2282BE9A00AB078B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B337C072282647400FD9E17 /* AppDelegate.swift */,
+				0B337C0E2282647500FD9E17 /* Assets.xcassets */,
+				0B337C102282647500FD9E17 /* LaunchScreen.storyboard */,
+				0B337C132282647500FD9E17 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0B337BFB2282647400FD9E17 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +83,14 @@
 		0B337C062282647400FD9E17 /* Contained */ = {
 			isa = PBXGroup;
 			children = (
-				0B337C072282647400FD9E17 /* AppDelegate.swift */,
 				0B337C0B2282647400FD9E17 /* Main.storyboard */,
-				0B337C0E2282647500FD9E17 /* Assets.xcassets */,
-				0B9F4E762282667E0049C323 /* Images */,
-				0B337C102282647500FD9E17 /* LaunchScreen.storyboard */,
 				0B9F4E79228266F50049C323 /* SKSpriteNode+Utility.swift */,
-				0B337C132282647500FD9E17 /* Info.plist */,
-				0B06A56122829D4C00AB078B /* Settings.swift */,
+				0B06A56B2282BE6800AB078B /* Model */,
 				0B06A56322829E2000AB078B /* InfoViewController.swift */,
 				0B06A56522829E2F00AB078B /* GameViewController.swift */,
 				0B06A5692282BAF700AB078B /* CustomScene.swift */,
 				0B06A56722829E3800AB078B /* SettingsViewController.swift */,
+				0B06A56C2282BE9A00AB078B /* Resources */,
 			);
 			path = Contained;
 			sourceTree = "<group>";
@@ -140,7 +153,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B9F4E772282667E0049C323 /* Images in Resources */,
 				0B337C122282647500FD9E17 /* LaunchScreen.storyboard in Resources */,
 				0B337C0F2282647500FD9E17 /* Assets.xcassets in Resources */,
 				0B337C0D2282647400FD9E17 /* Main.storyboard in Resources */,
