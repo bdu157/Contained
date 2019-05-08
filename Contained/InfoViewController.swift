@@ -16,6 +16,8 @@ class InfoViewController: UIViewController {
         
         
     }
+    
+    //Done button set up
     @IBAction func doneButtonTapped(_ sender: UIBarButtonItem) {
         navigationController?.popToRootViewController(animated: true)
     }
