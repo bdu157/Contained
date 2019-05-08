@@ -13,7 +13,7 @@
         <!--Play-->
         <scene sceneID="rQx-Hn-EUv">
             <objects>
-                <viewController id="jNx-js-ZDM" sceneMemberID="viewController">
+                <viewController id="jNx-js-ZDM" customClass="GameViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ipS-0n-JWc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
         <!--Settings-->
         <scene sceneID="h4h-VS-9kS">
             <objects>
-                <viewController id="NBS-Le-NGn" sceneMemberID="viewController">
+                <viewController id="NBS-Le-NGn" customClass="SettingsViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HOL-8y-yeg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -62,7 +62,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="srq-hB-p8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-298" y="499"/>
+            <point key="canvasLocation" x="-268" y="499"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sm4-oJ-rAq">
@@ -81,7 +81,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pPB-3u-A2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-801" y="-389"/>
+            <point key="canvasLocation" x="-895" y="-302"/>
         </scene>
         <!--Info-->
         <scene sceneID="585-Uz-cBX">
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="-1018.4" y="498.76847290640399"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="W7y-Vv-HkD">
             <objects>
-                <viewController id="IeN-I4-hhw" customClass="GameViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IeN-I4-hhw" customClass="InfoViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9PO-SF-fIS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,12 +122,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ea-oJ-Oj6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="428" y="499"/>
+            <point key="canvasLocation" x="438" y="499"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="ReO-1A-i5x">
             <objects>
-                <viewController id="Zfn-pK-mcl" customClass="SettingsViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zfn-pK-mcl" customClass="InfoViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUU-PQ-xrX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z27-12-ySe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="499"/>
+            <point key="canvasLocation" x="1127" y="499"/>
         </scene>
     </scenes>
     <resources>
