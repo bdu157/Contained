@@ -17,14 +17,28 @@
                     <view key="view" contentMode="scaleToFill" id="ipS-0n-JWc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <skView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-oz-eQz">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                            </skView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jOj-z9-mky" firstAttribute="bottom" secondItem="uB4-oz-eQz" secondAttribute="bottom" id="OAl-E7-Fh2"/>
+                            <constraint firstItem="jOj-z9-mky" firstAttribute="trailing" secondItem="uB4-oz-eQz" secondAttribute="trailing" id="Tsl-i3-fQ8"/>
+                            <constraint firstItem="uB4-oz-eQz" firstAttribute="leading" secondItem="jOj-z9-mky" secondAttribute="leading" id="j4d-Rj-fKk"/>
+                            <constraint firstItem="uB4-oz-eQz" firstAttribute="top" secondItem="jOj-z9-mky" secondAttribute="top" id="xc7-zc-5lT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jOj-z9-mky"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Play" image="game_controller" id="vXV-Gn-2MH"/>
+                    <connections>
+                        <outlet property="skview" destination="uB4-oz-eQz" id="Faf-Mv-cSZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Syp-rb-MTS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-60" y="-166"/>
+            <point key="canvasLocation" x="-60" y="-166.25615763546799"/>
         </scene>
         <!--Settings-->
         <scene sceneID="h4h-VS-9kS">
