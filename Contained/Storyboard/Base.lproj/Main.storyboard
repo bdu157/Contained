@@ -200,7 +200,7 @@
                     <navigationItem key="navigationItem" id="2Rh-uC-oyD">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="JdQ-Uc-qYT">
                             <connections>
-                                <segue destination="Zfn-pK-mcl" kind="show" id="PQZ-cj-HCo"/>
+                                <segue destination="Zfn-pK-mcl" kind="show" id="xVo-dt-RaG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
