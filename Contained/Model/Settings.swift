@@ -9,7 +9,7 @@
 import Foundation
 
 class Settings {
-    static let shared = Settings()    //computed property
+    static let shared = Settings()    //computed property  //this property is available for the rest.
     
     private init() {}
     

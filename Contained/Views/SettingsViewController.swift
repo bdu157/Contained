@@ -10,30 +10,27 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
-    let shared = Settings.shared
+    //you do not need to create this instance because share static property in Settings model is available without having to set an instance like we have been.
+    //let shared = Settings.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
-    
+
     //switch for HappyCrab and WaitingCrab
     
     @IBAction func toggleCrabs(_ sender: UISwitch) {
         if sender.isOn {
-            shared.crabName = "WaitingCrab"
+            Settings.shared.crabName = "WaitingCrab"
         } else {
-            shared.crabName = "HappyCrab"
+            Settings.shared.crabName = "HappyCrab"
         }
-        
-        
-        
-        
     }
     //switch buttons
     @IBAction func toggleRoll(_ sender: UISwitch) {
         if sender.isOn {
-            shared.shouldRoll = true
+            Settings.shared.shouldRoll = true
           
             /*
              testing if this above actually changes boolean value of shouldRoll property
@@ -41,15 +38,15 @@ class SettingsViewController: UIViewController {
              print(output)
             */
         } else {
-            shared.shouldRoll = false
+            Settings.shared.shouldRoll = false
         }
     }
     
     @IBAction func toggleZoom(_ sender: UISwitch) {
         if sender.isOn {
-            shared.shouldZoom = true
+            Settings.shared.shouldZoom = true
         } else {
-            shared.shouldZoom = false
+            Settings.shared.shouldZoom = false
         }
     }
 }
