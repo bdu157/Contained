@@ -11,13 +11,14 @@ import SpriteKit
 class CustomScene: SKScene {
     let crab = SKSpriteNode()
     
+    
     // Add and center child, initializing animation sequence
     override func sceneDidLoad() {
         super.sceneDidLoad()
         addChild(crab)
-        crab.loadTextures(named: "HappyCrab", forKey: SKSpriteNode.textureKey)
-        crab.position = CGPoint(x: frame.midX, y: frame.midY)
+        loadCrab()
     }
+    
     
     // Move to touch
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -36,6 +37,8 @@ class CustomScene: SKScene {
         let zoomAction = SKAction.scale(by: 1.3, duration: 0.3)
         let unzoomAction = SKAction.scale(to: 1.0, duration: 0.1)
         
+        
+        
         switch Settings.shared.shouldZoom {
         case false:
             crab.run(moveAction)
@@ -48,4 +51,10 @@ class CustomScene: SKScene {
             crab.run(rollAction)
         }
     }
+    
+    func loadCrab() {
+        guard let name = Settings.shared.crabName else {return}
+        crab.loadTextures(named: name, forKey: SKSpriteNode.textureKey)
+        crab.position = CGPoint(x: frame.midX, y: frame.midY)
+        }
 }
