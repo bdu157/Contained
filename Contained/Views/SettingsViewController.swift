@@ -17,6 +17,18 @@ class SettingsViewController: UIViewController {
         
     }
     
+    //switch for HappyCrab and WaitingCrab
+    
+    @IBAction func toggleCrabs(_ sender: UISwitch) {
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     //switch buttons
     @IBAction func toggleRoll(_ sender: UISwitch) {
         if sender.isOn {
