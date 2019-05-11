@@ -18,9 +18,9 @@ class CustomScene: SKScene {
         addChild(crab)
         loadCrab()
     }
-    
 
     // Move to touch
+   
     public override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         // Fetch a touch or leave
@@ -50,8 +50,43 @@ class CustomScene: SKScene {
             crab.run(rollAction)
         }
     }
+
     
     
+/* Basic Persistence in process
+     
+    private var persistentFileURL: URL? {
+        let fileManager = FileManager.default
+        guard let documentDirectory = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first else {return nil}
+        return documentDirectory.appendingPathComponent("Crabs.plist")
+    }
+    
+    func saveToPersistentStore() {
+        guard let url = self.persistentFileURL else {return}
+        do {
+            let encoder = PropertyListEncoder()
+            let data = try encoder.encode(??)  //location of crab and other set ups - shouldRoll, shouldZoom, crabName
+            try data.write(to: url)
+        } catch {
+            NSLog("error saving stars data: \(error)")
+        }
+    }
+    
+    func loadFromPersistentStore() {
+        let fileManager = FileManager.default
+        guard let url = persistentFileURL,
+            fileManager.fileExists(atPath: url.path) else {return}
+        do {
+            let data = try Data(contentsOf: url)
+            let decoder = PropertyListDecoder()
+            ?? = try decoder.decode( ??, from: data)
+        } catch {
+            NSLog("Error loading stars data: \(error)")
+        }
+
+    }
+ */
+
     func loadCrab() {
         guard let name = Settings.shared.crabName else {return}
         crab.loadTextures(named: name, forKey: SKSpriteNode.textureKey)

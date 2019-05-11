@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Settings {
-    static let shared = Settings()    //computed property  //this property is available for the rest.
+class Settings: Codable {
+    static var shared = Settings()    //computed property  //this property is available for the rest.
     
     private init() {}
     

@@ -49,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06271E228508FC00D746D3 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B11BAD22283D45F003D308D /* SettingsController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		0B06A56B2282BE6800AB078B /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0B06A56B2282BE6800AB078B /* Model */,
-				0B11BAD22283D45F003D308D /* SettingsController.swift */,
+				0B06271E228508FC00D746D3 /* Model Controller */,
 				0B72ED402282C47400E480CB /* Views */,
 				0B72ED3F2282C45C00E480CB /* Controllers */,
 				0B11BAD12283BD2D003D308D /* Storyboard */,
