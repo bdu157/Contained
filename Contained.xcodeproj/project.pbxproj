@@ -106,6 +106,7 @@
 				0B06A56B2282BE6800AB078B /* Model */,
 				0B06271E228508FC00D746D3 /* Model Controller */,
 				0B72ED402282C47400E480CB /* Views */,
+				0B11BACF2283B17F003D308D /* CrabsInfoViewController.swift */,
 				0B72ED3F2282C45C00E480CB /* Controllers */,
 				0B11BAD12283BD2D003D308D /* Storyboard */,
 				0B06A56C2282BE9A00AB078B /* Resources */,
@@ -128,7 +129,6 @@
 				0B06A56322829E2000AB078B /* InfoViewController.swift */,
 				0B06A56522829E2F00AB078B /* GameViewController.swift */,
 				0B06A56722829E3800AB078B /* SettingsViewController.swift */,
-				0B11BACF2283B17F003D308D /* CrabsInfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

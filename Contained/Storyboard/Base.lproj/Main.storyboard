@@ -125,10 +125,10 @@
             </objects>
             <point key="canvasLocation" x="632.79999999999995" y="-166.25615763546799"/>
         </scene>
-        <!--Crabs Info View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="y1a-7B-Hnh">
             <objects>
-                <viewController id="3M6-pp-UR3" customClass="CrabsInfoViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3M6-pp-UR3" customClass="InfoViewController" customModule="Contained" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="giF-fo-QtS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,13 +259,11 @@
                         <barButtonItem key="rightBarButtonItem" title="Done" id="Zaq-cv-oQK">
                             <connections>
                                 <action selector="doneButtonTapped:" destination="Zfn-pK-mcl" id="brE-aX-LnL"/>
-                                <segue destination="UCy-00-DLL" kind="unwind" unwindAction="unwindToCrabsView:" id="Xj9-KA-UlT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z27-12-ySe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="UCy-00-DLL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1125.5999999999999" y="498.76847290640399"/>
         </scene>
